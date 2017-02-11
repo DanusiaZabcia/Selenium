@@ -52,7 +52,16 @@
 			<artifactId>guava</artifactId>
 			<version>21.0</version>
 		</dependency>
-
+ <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.0.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-server</artifactId>
+        <version>3.0.1</version>
+    </dependency> 
 	</dependencies>
 
 
