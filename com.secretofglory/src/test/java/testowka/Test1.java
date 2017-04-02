@@ -10,21 +10,20 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Test1 {
 
-	static WebDriver driver;
+	 static WebDriver driver;
 
 	@BeforeClass
-	public void setUp() {
+	public static void setUp() {
 		
 		System.setProperty("webdriver.gecko.driver", "D:\\Danusia\\Testowanie\\geckodriver-v0.14.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
 //		driver = new ChromeDriver();
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void ShouldBePosibleToSearchTestowkaAtGoogle() throws InterruptedException {
 		driver.get("https://www.google.pl/?gws_rd=ssl");
 		WebElement searchField = driver.findElement(By.name("q"));
